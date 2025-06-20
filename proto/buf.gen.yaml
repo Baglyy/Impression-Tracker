@@ -1,0 +1,12 @@
+version: v1
+plugins:
+  # Plugin pour générer le code de base Go Protobuf
+  - plugin: buf.build/protocolbuffers/go
+    out: .
+    opt:
+      - paths=source_relative
+  # Plugin pour générer le code du serveur et client gRPC
+  - plugin: buf.build/grpc/go
+    out: .
+    opt:
+      - paths=source_relative

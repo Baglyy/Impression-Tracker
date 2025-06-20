@@ -1,0 +1,4 @@
+version: v1
+name: buf.build/Baglyy/impression_tracking
+deps:
+  - buf.build/googleapis/googleapis

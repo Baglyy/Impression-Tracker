@@ -1,0 +1,6 @@
+{
+  "packages": ["go", "protobuf", "buf"],
+  "shell": {
+    "init_hook": "go mod tidy"
+  }
+}

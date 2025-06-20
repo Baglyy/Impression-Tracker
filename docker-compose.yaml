@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  dragonfly:
+    image: docker.dragonflydb.io/dragonflydb/dragonfly
+    ports:
+      - '6379:6379'
+
+  impression-tracker:
+    build: .
+    ports:
+      - '50051:50051'
+    depends_on:
+      - dragonfly

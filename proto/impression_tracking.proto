@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package arago;
+
+option go_package = "github.com/Baglyy/impression_tracking/proto";
+
+service ImpressionTrackerService {
+  rpc TrackImpression(TrackImpressionRequest) returns (TrackImpressionResponse);
+}
+
+message TrackImpressionRequest {
+  string ad_id = 1;
+}
+
+message TrackImpressionResponse {
+  string ad_id = 1;
+  int64 total_impressions = 2;
+}
