@@ -2,9 +2,9 @@ package main
 
 import (
 	"errors"
-	"context" // Requis par gRPC, on ne s'en sert pas directement ici.
-	"log"     // Pour afficher des messages dans la console (ex: "Le serveur démarre...").
-	"net"     // Pour tout ce qui est réseau, comme ouvrir un port.
+	"context" 
+	"log"    
+	"net"     
 
 	// Import du code que buf a généré
 	pb "github.com/Baglyy/impression_tracking/proto" // Code généré à partir de proto
@@ -20,7 +20,7 @@ type server struct {
 	dragonflyClient *redis.Client
 }
 
-// NewServer crée une nouvelle instance de notre serveur.
+// Créer une nouvelle instance du serveur
 func NewServer(dflyClient *redis.Client) *server {
 	return &server{dragonflyClient: dflyClient}
 }
