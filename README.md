@@ -22,12 +22,12 @@
 
 2.  **Activer le shell Devbox** (à la racine du projet)
     ```sh
-        devbox shell
+    devbox shell
     ```
 
 3.  **Lancer les tests unitaires** :
     ```sh
-        go test ./...
+    go test ./...
     ```
 
 ## Comment Tester l'Endpoint gRPC
